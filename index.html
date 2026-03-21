@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
+    <head>
+    </head>
+    <body>
+        <button onclick="myfunction(5)">Execute JS function</button>
 
-<body>
-
-    <h1 id="myH"></h1>
-    <p id="myP"></p>
-
-    <script>
-        // My heading:
-        document.getElementById("myH").innerHTML = "JavaScript Comments";
-
-        // My Paragraph:
-        document.getElementById("myP").innerHTML = "My First Paragraph";
-        
-    </script>
-</body>
+        <script>
+            function myfunction(x, y)
+            {
+                if (y===undefined) {
+                    y=2;
+                }
+                document.write(x*y);
+            }
+        </script>
+    </body>
 </html>
