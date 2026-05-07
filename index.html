@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
     <body>
-        <button onclick="myfunction(5)">Execute JS function</button>
 
+        <h2>JavaScript Objects and its Properties</h2>
+
+        <p>There are two different ways to access an object property</p>
+
+        <p> You can use .property or ["property"].</p>
+        <p id="demo"></p>
         <script>
-            function myfunction(x, y)
-            {
-                if (y===undefined) {
-                    y=2;
-                }
-                document.write(x*y);
-            }
+            // create an object:
+            var person = {
+            firstName: "Manreet Kaur",
+            age: 13,
+            };
+
+            //Display some data from the object:
+            document.getElementById("demo").innerHTML= person.firstName + " is " + person.age + " years old.";
         </script>
+        
     </body>
 </html>
