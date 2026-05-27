@@ -2,30 +2,23 @@
 <html>
 
 <body>
-
-    <h1>Simple Calculator</h1>
-    <p>Perform all Operations using JavaScript</p>
-    <p id="add"></p>
-    <p id="sub"></p>
-    <p id="mul"></p>
-    <p id="div"></p>
+    <h2>JavaScript Objects Data Structure and Array</h2>
     <script>
-    
-       var num1 = 10;
-        var num2 = 2;
-    </script>
-</body>
-    <var add = num1 + num2;
-    var sub = num1 - num2;
-    var mul = num1 * num2;
-    var div = num1 / num2;></var>
-    Document.getElementById("add").innerHTML =
-    "The added value is: " + add;
-
-    document.getElementById("sub").innerHTML =
-    "The subtracted value is: " + sub;
-    document.getElementById("mul").innerHTML =
-    "The multiplied value is: " + mul;
-    document.getElementById("div").innerHTML =
-    "The divided value is: " + div;
-</html>
+        var student = {
+            name: 'Riya',
+            age: '12',
+            Grade: '7',
+            hobbies: 'Drawing',
+            fav_sport: 'Cricket'
+        };
+        <script>
+            var color = ["white", "black", "red", "green", "blue"];
+            </script>
+            document.write("Student name is : " + student.name,
+            "<br>","Student favorite sport is : "
+                +student.fav_sport);
+                document.write("<br>Before Poping the colors are: " + color.join("^"));
+                document.write("<br>My favorite color is : " + color[3]);
+                color.pop();
+                        document.write("<br>After Poping the colors are : " + color.join("*"));
+        
