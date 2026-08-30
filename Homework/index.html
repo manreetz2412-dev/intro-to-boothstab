@@ -2,140 +2,220 @@
 <html>
 
 <head>
-    <title>My Superhero Power Cards</title>
+    <title>The Rally Café</title>
 
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0f4ff;
+            background-color: #f4f8f5;
+            color: #1f2933;
+        }
+
+        header {
+            background-color: #173f35;
+            color: white;
             text-align: center;
             padding: 30px;
         }
 
-        h1 {
-            color: #ff4d4d;
+        header h1 {
+            font-size: 40px;
+            margin: 5px;
         }
 
-        p {
-            color: #444444;
+        header p {
+            font-size: 18px;
         }
 
-        button {
-            background-color: #ff4d4d;
+        nav {
+            background-color: #102d26;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
             color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 8px;
-            font-size: 16px;
-            cursor: pointer;
+            text-decoration: none;
+            margin: 20px;
+            font-weight: bold;
         }
 
-        .card-container {
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+            background-color: #dcefe5;
+        }
+
+        .hero h2 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 19px;
+        }
+
+        .section {
+            padding: 40px 10%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 30px;
+            color: #173f35;
+        }
+
+        .cards {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin-top: 25px;
+            gap: 25px;
             flex-wrap: wrap;
         }
 
-        .hero-card {
+        .card {
             background-color: white;
-            border: 3px solid #ff4d4d;
-            border-radius: 12px;
-            width: 220px;
-            padding: 18px;
+            width: 250px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px gray;
         }
 
-        .hero-name {
-            font-size: 22px;
+        .card h3 {
+            color: #173f35;
+        }
+
+        .price {
             font-weight: bold;
-            color: #222222;
+            font-size: 18px;
         }
 
-        .hero-power {
-            color: #0057b8;
-            font-weight: bold;
+        .about {
+            background-color: #e8f3ed;
         }
 
-        .hero-mission {
-            color: #666666;
-            font-size: 14px;
+        footer {
+            background-color: #102d26;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .sports {
+            font-size: 35px;
+            margin: 15px;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>My Superhero Power Cards</h1>
+    <header>
+        <h1>🎾 The Rally Café ⚽</h1>
+        <p>Good food. Great games. Better memories.</p>
+    </header>
 
-    <p>
-        Click the button to create superhero objects using JavaScript classes.
-    </p>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#sports">Sports</a>
+    </nav>
 
-    <button onclick="showHeroes()">Show Superheroes</button>
+    <section class="hero" id="home">
+        <h2>Welcome to The Rally Café!</h2>
+        <p>
+            A fun restaurant for athletes, families, and anyone who loves
+            great food and sports.
+        </p>
 
-    <div class="card-container" id="heroCards"></div>
+        <div class="sports">
+            🎾 ⚽ 🏊‍♀️
+        </div>
+    </section>
 
-    <script>
-        // What is a Class?
-        // A class is a blueprint used to create objects.
+    <section class="section" id="menu">
+        <h2>Our Favorites</h2>
 
-        class Superhero {
+        <div class="cards">
 
-            // Constructor
-            constructor(name, power, mission) {
+            <div class="card">
+                <h3>Grand Slam Burger 🎾</h3>
+                <p>
+                    A juicy burger with lettuce, tomato, cheese,
+                    and our special sauce.
+                </p>
+                <p class="price">$12.99</p>
+            </div>
 
-                // The this keyword stores values inside the object
-                this.name = name;
-                this.power = power;
-                this.mission = mission;
-            }
+            <div class="card">
+                <h3>Soccer Supreme Pizza ⚽</h3>
+                <p>
+                    A cheesy pizza topped with pepperoni,
+                    vegetables, and extra cheese.
+                </p>
+                <p class="price">$14.99</p>
+            </div>
 
-            // Class Method
-            describeHero() {
-                return "<div class='hero-card'>" +
-                    "<p class='hero-name'>" + this.name + "</p>" +
-                    "<p class='hero-power'>Power: " + this.power + "</p>" +
-                    "<p class='hero-mission'>Mission: " + this.mission + "</p>" +
-                    "</div>";
-            }
-        }
+            <div class="card">
+                <h3>Swimmer's Smoothie 🏊‍♀️</h3>
+                <p>
+                    A refreshing strawberry and banana smoothie
+                    perfect after a long day.
+                </p>
+                <p class="price">$6.49</p>
+            </div>
 
-        function showHeroes() {
+        </div>
+    </section>
 
-            // Creating Objects
-            let hero1 = new Superhero(
-                "Captain Code",
-                "Debugging errors",
-                "Fix broken programs and save the coding world."
-            );
+    <section class="section about" id="about">
+        <h2>About The Rally Café</h2>
 
-            let hero2 = new Superhero(
-                "Pixel Flash",
-                "Super speed design",
-                "Build colourful websites in seconds."
-            );
+        <p>
+            The Rally Café was created for people who love food,
+            sports, and spending time with friends. Our restaurant
+            is a place where everyone can relax, eat, and have fun.
+        </p>
+    </section>
 
-            let hero3 = new Superhero(
-                "Logic Girl",
-                "Smart problem-solving",
-                "Use logic to solve tricky challenges."
-            );
+    <section class="section" id="sports">
+        <h2>Sports We Love</h2>
 
-            let hero4 = new Superhero(
-                "Data Knight",
-                "Data protection",
-                "Keep important information safe."
-            );
+        <div class="cards">
 
-            document.getElementById("heroCards").innerHTML =
-                hero1.describeHero() +
-                hero2.describeHero() +
-                hero3.describeHero() +
-                hero4.describeHero();
-        }
-    </script>
+            <div class="card">
+                <h3>🎾 Tennis</h3>
+                <p>
+                    Our favorite! We love watching matches
+                    and celebrating every big rally.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>⚽ Soccer</h3>
+                <p>
+                    Come watch the game with friends
+                    while enjoying some great food.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🏊‍♀️ Swimming</h3>
+                <p>
+                    A refreshing sport that deserves
+                    a refreshing meal afterward!
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 The Rally Café</p>
+        <p>Eat • Play • Rally • Repeat 🎾</p>
+    </footer>
 
 </body>
 
-</html>
+</html> 
