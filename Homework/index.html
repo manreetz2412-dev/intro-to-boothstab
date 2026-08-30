@@ -1,221 +1,140 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>The Rally Café</title>
+    <title>Game Point Sports</title>
 
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f4f8f5;
-            color: #1f2933;
+            background-color: #f5f5f5;
         }
 
-        header {
+        /* Navigation Bar */
+        .navbar {
             background-color: #173f35;
-            color: white;
+            padding: 20px;
             text-align: center;
-            padding: 30px;
         }
 
-        header h1 {
-            font-size: 40px;
-            margin: 5px;
-        }
-
-        header p {
-            font-size: 18px;
-        }
-
-        nav {
-            background-color: #102d26;
-            text-align: center;
-            padding: 15px;
-        }
-
-        nav a {
+        .navbar a {
             color: white;
             text-decoration: none;
-            margin: 20px;
+            margin: 25px;
+            font-size: 18px;
             font-weight: bold;
         }
 
-        .hero {
-            text-align: center;
-            padding: 70px 20px;
-            background-color: #dcefe5;
-        }
-
-        .hero h2 {
-            font-size: 35px;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 19px;
-        }
-
-        .section {
-            padding: 40px 10%;
-            text-align: center;
-        }
-
-        .section h2 {
-            font-size: 30px;
-            color: #173f35;
-        }
-
-        .cards {
+        /* Banner */
+        .banner {
+            height: 400px;
+            background-image: url("https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0");
+            background-size: cover;
+            background-position: center;
             display: flex;
             justify-content: center;
-            gap: 25px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .banner-text {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 30px 50px;
+            border-radius: 15px;
+        }
+
+        .banner-text h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .banner-text p {
+            font-size: 20px;
+        }
+
+        /* Main Layout */
+        .content {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px;
             flex-wrap: wrap;
         }
 
-        .card {
+        .box {
             background-color: white;
             width: 250px;
-            padding: 25px;
+            padding: 30px;
+            text-align: center;
             border-radius: 15px;
-            box-shadow: 0 4px 10px gray;
+            box-shadow: 0px 4px 10px gray;
         }
 
-        .card h3 {
+        .box h2 {
             color: #173f35;
         }
 
-        .price {
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .about {
-            background-color: #e8f3ed;
-        }
-
         footer {
-            background-color: #102d26;
+            background-color: #173f35;
             color: white;
             text-align: center;
-            padding: 25px;
-        }
-
-        .sports {
-            font-size: 35px;
-            margin: 15px;
+            padding: 20px;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>🎾 The Rally Café ⚽</h1>
-        <p>Good food. Great games. Better memories.</p>
-    </header>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Tennis</a>
+        <a href="#">Soccer</a>
+        <a href="#">Swimming</a>
+        <a href="#">About</a>
+    </div>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#about">About Us</a>
-        <a href="#sports">Sports</a>
-    </nav>
-
-    <section class="hero" id="home">
-        <h2>Welcome to The Rally Café!</h2>
-        <p>
-            A fun restaurant for athletes, families, and anyone who loves
-            great food and sports.
-        </p>
-
-        <div class="sports">
-            🎾 ⚽ 🏊‍♀️
+    <!-- Banner Image -->
+    <div class="banner">
+        <div class="banner-text">
+            <h1>GAME POINT</h1>
+            <p>Where Sports Bring Us Together 🎾 ⚽ 🏊</p>
         </div>
-    </section>
+    </div>
 
-    <section class="section" id="menu">
-        <h2>Our Favorites</h2>
+    <!-- Website Layout -->
+    <div class="content">
 
-        <div class="cards">
-
-            <div class="card">
-                <h3>Grand Slam Burger 🎾</h3>
-                <p>
-                    A juicy burger with lettuce, tomato, cheese,
-                    and our special sauce.
-                </p>
-                <p class="price">$12.99</p>
-            </div>
-
-            <div class="card">
-                <h3>Soccer Supreme Pizza ⚽</h3>
-                <p>
-                    A cheesy pizza topped with pepperoni,
-                    vegetables, and extra cheese.
-                </p>
-                <p class="price">$14.99</p>
-            </div>
-
-            <div class="card">
-                <h3>Swimmer's Smoothie 🏊‍♀️</h3>
-                <p>
-                    A refreshing strawberry and banana smoothie
-                    perfect after a long day.
-                </p>
-                <p class="price">$6.49</p>
-            </div>
-
+        <div class="box">
+            <h2>🎾 Tennis</h2>
+            <p>
+                Learn about tennis, famous players,
+                tournaments, and more.
+            </p>
         </div>
-    </section>
 
-    <section class="section about" id="about">
-        <h2>About The Rally Café</h2>
-
-        <p>
-            The Rally Café was created for people who love food,
-            sports, and spending time with friends. Our restaurant
-            is a place where everyone can relax, eat, and have fun.
-        </p>
-    </section>
-
-    <section class="section" id="sports">
-        <h2>Sports We Love</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>🎾 Tennis</h3>
-                <p>
-                    Our favorite! We love watching matches
-                    and celebrating every big rally.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>⚽ Soccer</h3>
-                <p>
-                    Come watch the game with friends
-                    while enjoying some great food.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>🏊‍♀️ Swimming</h3>
-                <p>
-                    A refreshing sport that deserves
-                    a refreshing meal afterward!
-                </p>
-            </div>
-
+        <div class="box">
+            <h2>⚽ Soccer</h2>
+            <p>
+                Keep up with soccer games,
+                teams, and exciting moments.
+            </p>
         </div>
-    </section>
+
+        <div class="box">
+            <h2>🏊 Swimming</h2>
+            <p>
+                Discover swimming, competitions,
+                and different swimming events.
+            </p>
+        </div>
+
+    </div>
 
     <footer>
-        <p>© 2026 The Rally Café</p>
-        <p>Eat • Play • Rally • Repeat 🎾</p>
+        <p>Game Point Sports © 2026</p>
     </footer>
 
 </body>
-
-</html> 
+</html>
