@@ -1,47 +1,30 @@
-html {
-    scroll-behavior: smooth;
+
+
+
+footer{
+    background: #2b2b2b;
+    width:100%
 }
 
-body {
-    background: #252525;
-    font-family:"Baloo Tamma 2" , cursive;
-}
-/* Main Heading Fonnt*/
-.m-heading {
-    font-family: "Roboto slab", serif;
-}
-.text-white {
-    color: white;
-}
-/* Main Container height */
-.main-containern {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url('http://github.com/harshacc031-dot/img/blob/main/1.png?raw= true');
-    background-attachment: fixed;
-    background-size: cover;
+
+footer.container{
+    padding:22px 0 !important;
 }
 
-/* Aligning items in main row */
-.main_row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+footer h5{
+    margin:0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #8b8b8b;
 }
 
-/* Changimng Name Font size */
-.main_row h1 {
-    font-size : 5rem;
-    
+
+footer a{
+    color: #f2a900; !important;
+    text-decoration: none;
 }
 
-/*Making the main image the size of the screen */
-.main_row img {
-    width: auto;
-    height: 100vh;
-
+footer a:hover{
+    text-decoration: underline;
 }
